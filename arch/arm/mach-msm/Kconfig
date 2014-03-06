@@ -2652,7 +2652,13 @@ config MSM_HSIC_SYSMON_TEST
 	  This will create a debugfs file entry named "hsic_sysmon_test" which
 	  can be read and written to send character data to the sysmon port of
 	  the modem over USB.
-
+	  
+config MACH_DLXP_UL
+	depends on ARCH_APQ8064
+	bool "APQ8064 DLXP_UL"
+	help
+	  Support for the HTC APQ8064 DLXP_UL.
+	  
 config MACH_MONARUDO
 	depends on ARCH_APQ8064
 	bool "APQ8064 MONARUDO"
